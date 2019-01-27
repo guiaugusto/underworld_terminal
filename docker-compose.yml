@@ -1,0 +1,11 @@
+version: '3'
+services:
+    underworld:
+        container_name: underworld
+        build:
+            context: .
+            dockerfile: Dockerfile
+        volumes:
+            - .:/underworld/
+        stdin_open: true
+        tty: true
