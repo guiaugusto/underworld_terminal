@@ -8,7 +8,7 @@ class Warrior(Character):
         self.hp = 2000
         self.mp = 80
         self.sp = 30
-        self.hp_rate = 1.015
+        self.hp_rate = 1.02
 
         # Attributes
         self.strength = 15
@@ -24,3 +24,9 @@ class Warrior(Character):
 
     def special_simple_attack(self):
         pass
+
+    def update_hp_rate(self, level):
+        if level > 100 and level < 200:
+            self.hp_rate = 1.015
+        elif level > 200:
+            self.hp_rate = 1.0025
