@@ -18,3 +18,9 @@ class Archer(Character):
         self.intelligence = 5
         self.perception = 5
         self.charisma = 5
+
+    def normal_simple_attack(self):
+        pass
+
+    def special_simple_attack(self):
+        pass
