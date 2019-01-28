@@ -26,7 +26,7 @@ class Archer(Character):
         pass
 
     def update_hp_rate(self, level):
-        if level > 200:
+        if level > 200 and level < 300:
             self.hp_rate = 1.005
         elif level > 300:
             self.level_rate = 1.0025
