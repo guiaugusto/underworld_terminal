@@ -6,6 +6,7 @@ class Character():
         self.hp = 0
         self.mp = 0
         self.sp = 0
+        self.level_rate = 1
 
         # Attributes
         self.strength = 0
@@ -24,3 +25,13 @@ class Character():
         name = input('Insira o nome do personagem: ')
 
         return name
+
+    def update_level_rate(self, level):
+        if level > 200:
+            self.level_rate = 1.005
+        elif level > 300:
+            self.level_rate = 1.0025
+
+    def update_level(self, level):
+        print("Você aumentou seu nível para {}!".format(level))
+        self.update_level_rate(level)
