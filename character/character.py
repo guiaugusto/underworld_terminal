@@ -26,12 +26,12 @@ class Character():
 
         return name
 
-    def update_level_rate(self, level):
-        if level > 200:
-            self.hp_rate = 1.005
-        elif level > 300:
-            self.level_rate = 1.0025
+    def update_hp_rate(self, level):
+        """
+        Method to be overwrite
+        """
+        pass
 
     def update_level(self, level):
         print("Você aumentou seu nível para {}!".format(level))
-        self.update_level_rate(level)
+        self.update_hp_rate(level)

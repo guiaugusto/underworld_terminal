@@ -24,3 +24,9 @@ class Archer(Character):
 
     def special_simple_attack(self):
         pass
+
+    def update_hp_rate(self, level):
+        if level > 200:
+            self.hp_rate = 1.005
+        elif level > 300:
+            self.level_rate = 1.0025
