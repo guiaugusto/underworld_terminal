@@ -6,7 +6,7 @@ class Character():
         self.hp = 0
         self.mp = 0
         self.sp = 0
-        self.level_rate = 1
+        self.hp_rate = 1
 
         # Attributes
         self.strength = 0
@@ -28,7 +28,7 @@ class Character():
 
     def update_level_rate(self, level):
         if level > 200:
-            self.level_rate = 1.005
+            self.hp_rate = 1.005
         elif level > 300:
             self.level_rate = 1.0025
 
